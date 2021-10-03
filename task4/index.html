@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8" />
+    <title>TASK 4</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+   
+  </head>
+
+  <body>
+    <header class="container-fluid">
+      <div class="m-auto p-3">
+        <img id = "logoimg" src="image.png"/>
+        <h2 class="name"> TASK 4</h2>
+      </div>
+    </header>
+    <main class="m-auto p-3">
+      <div class="m-auto" id="mainer">
+        <p class="row" id="navigation">
+          <a class="col-sm-12 col-md-4 col-lg-4 text-lg-center text-md-center" href="#links">Гиперссылки</a>
+          <a class="col-sm-12 col-md-4 col-lg-4 text-lg-center text-md-center" href="#table">Таблица</a>
+          <a class="col-sm-12 col-md-4 col-lg-4 text-lg-center text-md-center" href="#form">Форма</a>
+        </p>
+
+        <div>
+          <h2 id="links"><br>Гиперссылки</h2>
+          <ol>
+            <li><a href="http://example.com">Абсолютная гиперссылка на главную страницу сайта example.com</a></li>
+        <li><a href="https://example.com" id="anchor">Абсолютная гиперссылка на главную страницу сайта example.com в протоколе https</a></li>
+        <li><a href="ftp://ftp.example.com/file.bin">Ссылка на файл на сервере FTP без авторизации</a></li>
+        <li><a href="ftp://user:pass@anysite.ru/anyfolder/anyfile.txt">Ссылка на файл на сервере FTP с авторизацией</a></li>
+        <li><a href="https://ru.stackoverflow.com/questions/456623/%D0%9D%D0%B0%D0%B3%D0%BB%D1%8F%D0%B4%D0%BD%D1%8B%D0%B9-%D0%BF%D1%80%D0%B8%D0%BC%D0%B5%D1%80-%D1%80%D0%B0%D0%B7%D0%BB%D0%B8%D1%87%D0%B8%D1%8F-dto-poco-pojo-%D0%B8-value-object#footer">Ссылка на фрагмент страницы некоторого сайта</a></li>
+        <li><a href="#anchor">Ссылка на фрагмент текущей страницы</a></li>
+        <li><a href="https://vk.com/doc145294955_515176723?hash=2de71841cb97a66e19&dl=4012ab250b148ef8a2">Ссылка с двумя параметрами в URL</a></li>
+        <li>
+        <ul>
+            <li><a href="https://habr.com/ru/" title="Публикации">Публикации</a></li>
+            <li><a href="https://habr.com/ru/news/" title="Новости">Новости</a></li>
+            <li><a href="https://habr.com/ru/users/" title="Пользователи">Пользователи</a></li>
+            <li><a href="https://habr.com/ru/hubs/" title="Хабы">Хабы</a></li>
+            <li><a href="https://habr.com/ru/companies/" title="Компании">Компании</a></li>
+            <li><a href="https://habr.com/ru/sandbox/" title="Песочница">Песочница</a></li>
+        </ul>
+        </li>
+        <li><a>Ссылка без href</a></li>
+        <li><a href="">Ссылка с пустым href</a></li>
+        <li><a href="https://habr.com" rel="nofollow">Ссылка, по которой запрещен переход поисковикам</a></li>
+        <li><!--noindex--><a href="https://habr.com">Ссылка, запрещенная для индексации поисковиками</a><!--/noindex--></li>
+        <li>∀ <a href="https://ru.wikipedia.org/wiki/%D0%AD%D0%BF%D1%81%D0%B8%D0%BB%D0%BE%D0%BD">ε</a> больше 0...</li>
+        <li><a href="https://www.avtovzglyad.ru/media/article/00_B9AkuG0.jpg.740x555_q85_box-314%2C0%2C1918%2C1200_crop_detail_upscale.jpg">Ссылка-изображение</a></li>
+        <li><img src="google.png" width="100" height="100" usemap="#rectangle" alt="Ссылка на ВК"><map name = "rectangle"><area shape = "rect" coords = "0,0,100,100" href = "https://google.com" alt="Ссылка на google"></map></li>
+        <li><a href="index.html">Относительная ссылка на страницу в текущем каталоге</a></li>
+        <li><a href="about/index.html">Относительная ссылка на страницу в каталоге about</a></li>
+        <li><a href="../index.html">Относительная ссылка на страницу в каталоге уровнем выше текущего</a></li>
+        <li><a href="../../index.html">Относительная ссылка на страницу в каталоге двумя уровнями выше</a></li>
+        <li><a href="/">Сокращенная ссылка на главную</a></li>
+        <li><a href="/folder/index.html">Сокращенная ссылка на внутреннюю страницу</a></li>
+          </ol>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-12 order-sm-first order-last">
+            <h2 id="table"> Таблица</h2>
+            <table class="p-3">
+              <tbody>
+                <tr>
+                  <th class="header_table" colspan="4">Заголовок таблицы</th>
+                </tr>
+                <tr>
+                  <td>Ячейка 11</td>
+                  <td>Ячейка 12</td>
+                  <td>Ячейка 13</td>
+                  <td>Ячейка 14</td>
+                </tr>
+                <tr class="even">
+                  <td>Ячейка 21</td>
+                  <td>Ячейка 22</td>
+                  <td rowspan="2" class="union">Ячейка 23</td>
+                  <td>Ячейка 24</td>
+                </tr>
+                <tr>
+                  <td>Ячейка 31</td>
+                  <td>Ячейка 32</td>
+                  <td>Ячейка 34</td>
+                </tr>
+                <tr class="even" align="center">
+                  <td>Ячейка 41</td>
+                  <td colspan="2" class="union">Ячейка 42</td>
+                  <td>Ячейка 44</td>
+                </tr>
+                <tr>
+                  <td>Ячейка 51</td>
+                  <td>Ячейка 52</td>
+                  <td>Ячейка 53</td>
+                  <td>Ячейка 54</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="col-sm-12 order-sm-last order-first">
+          <h2 id="form">Форма</h2>
+          <form class="p-3" method="post">               
+            <label>Имя:<br>
+              <input name="field-name" value="" placeholder="Имя">
+            </label><br><br>
+
+            <label>
+              Ваш email:<br>
+              <input name="field-email" value="" placeholder="test@example.com" type="email">
+            </label><br><br>
+
+            <label>
+              Дата рождения:<br>
+                <input name="field-date" value="" type="date">
+            </label><br><br>
+
+            Пол:<br>
+            <label><input type="radio" name="radio-group-1" value="Мужской">Мужской</label>
+            <label><input type="radio" name="radio-group-1" value="Женский">Женский</label><br><br>
+
+            Количество конечностей:<br>
+            <label><input type="radio" name="radio-group-1" value="1"> 1  </label>
+            <label><input type="radio" name="radio-group-1" value="2"> 2  </label>
+            <label><input type="radio" name="radio-group-1" value="3"> 3  </label>
+            <label><input type="radio" name="radio-group-1" value="4"> 4  </label><br><br>
+
+            <label>
+              Сверхспособности:<br>
+              <select name="field-name-4" multiple="multiple">
+                <option value="Бессмертие">Бессмертие</option>
+                <option value="Прохождение сквозь стены">Прохождение сквозь стены</option>
+                <option value="Левитация">Левитация</option>
+              </select>
+            </label><br><br>
+
+            <label>
+              Биография:<br>
+              <textarea name="field-name-2" placeholder="Напишите о себе..."></textarea>
+            </label><br><br>
+
+            <label><input type="checkbox" name="check-1">С контрактом ознакомлен</label><br>
+
+            <input type="submit" value="Отправить">
+
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer class="m-auto p-2">© Kirill Kuzmin 2021</footer>
+  </body>
+</html>
